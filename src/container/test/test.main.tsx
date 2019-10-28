@@ -43,6 +43,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="时间选择器"
             onPress={() => this.props.navigation.navigate({routeName: 'TestDatePicker'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestImageViewer" 
+            detailSubTitle="大图查看"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestImageViewer'})} 
+          />
           
         </ScrollView>
       </View>

@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-28 18:53:32
+ * @Last Modified time: 2019-10-28 19:15:14
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -11,6 +11,7 @@ import TestDeviceInfo from '../../container/test/test.device.info';
 import Web from '../../container/web/web';
 import TestWeb from '../../container/test/test.web';
 import TestDatePicker from '../../container/test/test.date.picker';
+import TestImageViewer from '../../container/test/test.image.viewer';
 
 export const StackRouteKeyMap = {
   test: {
@@ -46,6 +47,10 @@ export const routeMap = {
   TestDatePicker: {
     screen: TestDatePicker,
     path: "TestDatePicker"
+  },
+  TestImageViewer: {
+    screen: TestImageViewer,
+    path: "TestImageViewer"
   },
   /**
    * @param {Home} 主页
