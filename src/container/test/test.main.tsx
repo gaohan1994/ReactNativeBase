@@ -49,6 +49,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="大图查看"
             onPress={() => this.props.navigation.navigate({routeName: 'TestImageViewer'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestImagePicker" 
+            detailSubTitle="调用相册和摄像头"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestImagePicker'})} 
+          />
           
         </ScrollView>
       </View>
