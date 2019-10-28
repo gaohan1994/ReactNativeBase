@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import { ListItem } from 'react-native-centerm-sdk';
 import { ContainerNavigation } from '../../type/navigation/navigation.build.param';
 
@@ -24,6 +24,12 @@ export default class TestMain extends React.Component<Props> {
             title="CentermSdk" 
             detailSubTitle="Design by Ghan Centerm Componens"
             onPress={() => this.props.navigation.navigate({routeName: 'CentermSdk'})} 
+          />
+          <ListItem
+            {...commonListItemProps}
+            title="TestDeviceInfo" 
+            detailSubTitle="查看设备信息"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestDeviceInfo'})} 
           />
         </ScrollView>
       </View>

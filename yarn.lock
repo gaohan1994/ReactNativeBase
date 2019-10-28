@@ -5139,6 +5139,11 @@ react-native-centerm-sdk@^1.2.4:
     react-timer-mixin "^0.13.2"
     rebound "^0.0.13"
 
+react-native-device-info@2.2.2:
+  version "2.2.2"
+  resolved "https://registry.npmjs.org/react-native-device-info/-/react-native-device-info-2.2.2.tgz#777388b8cff4594c8db2ea3a53f2f1f9e2c611a1"
+  integrity sha512-2b0TycUJbW/9T7L070L6q4+ce8guD4c0c8mWWjiVNuvCrZVf7VNomvNk1BqIVXcnYbZO43V0SVN6z1fvp2HTyg==
+
 react-native-gesture-handler@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.4.1.tgz#c38d9e57637b95e221722a79f2bafac62e3aeb21"
@@ -6149,8 +6154,8 @@ tar@^4:
 
 teaset@^0.7.0:
   version "0.7.0"
-  resolved "https://registry.npm.taobao.org/teaset/download/teaset-0.7.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fteaset%2Fdownload%2Fteaset-0.7.0.tgz#a86d8f420eaf51c211007d6d26cfa1ad4e0e2c46"
-  integrity sha1-qG2PQg6vUcIRAH1tJs+hrU4OLEY=
+  resolved "https://registry.npmjs.org/teaset/-/teaset-0.7.0.tgz#a86d8f420eaf51c211007d6d26cfa1ad4e0e2c46"
+  integrity sha512-gRSEWmQWXaHPeWi1q/LLNK39ZrTjw2UCU/3E3yWcsj5lX0uggyJBU5cEn/1Qcf/b05QJCHXF0u47Ixo3en1LuA==
   dependencies:
     prop-types "^15.7.2"
     react-native-deprecated-custom-components "github:rilyu/react-native-custom-components"
