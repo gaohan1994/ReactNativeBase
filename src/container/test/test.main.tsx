@@ -1,7 +1,9 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
+import { ListItem } from 'react-native-centerm-sdk';
+import { ContainerNavigation } from '../../type/navigation/navigation.build.param';
 
-export interface Props {}
+interface Props extends ContainerNavigation {}
 
 export default class TestMain extends React.Component<Props> {
 
@@ -10,9 +12,20 @@ export default class TestMain extends React.Component<Props> {
   }
 
   public render() {
+    const commonListItemProps: any = {
+      icon: { uri: 'http://net.huanmusic.com/react.png' },
+      bottomBorder: true
+    };
     return (
       <View style={{flex: 1}}>
-        <Text> text </Text>
+        <ScrollView style={{flex: 1}}>
+          <ListItem
+            {...commonListItemProps}
+            title="CentermSdk" 
+            detailSubTitle="Design by Ghan Centerm Componens"
+            onPress={() => this.props.navigation.navigate({routeName: 'CentermSdk'})} 
+          />
+        </ScrollView>
       </View>
     );
   }
