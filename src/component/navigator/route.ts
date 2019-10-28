@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-28 19:27:32
+ * @Last Modified time: 2019-10-28 19:46:59
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -13,6 +13,7 @@ import TestWeb from '../../container/test/test.web';
 import TestDatePicker from '../../container/test/test.date.picker';
 import TestImageViewer from '../../container/test/test.image.viewer';
 import TestImagePicker from '../../container/test/test.image.picker';
+import TestQRCode from '../../container/test/test.qrcode';
 
 export const StackRouteKeyMap = {
   test: {
@@ -56,6 +57,10 @@ export const routeMap = {
   TestImagePicker: {
     screen: TestImagePicker,
     path: "TestImagePicker"
+  },
+  TestQRCode: {
+    screen: TestQRCode,
+    path: "TestQRCode"
   },
   /**
    * @param {Home} 主页

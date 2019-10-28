@@ -55,6 +55,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="调用相册和摄像头"
             onPress={() => this.props.navigation.navigate({routeName: 'TestImagePicker'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestQRCode" 
+            detailSubTitle="二维码组件"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestQRCode'})} 
+          />
           
         </ScrollView>
       </View>

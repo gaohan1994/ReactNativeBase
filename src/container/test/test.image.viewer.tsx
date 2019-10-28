@@ -9,7 +9,7 @@ interface State {
   visible: boolean;
 }
 
-export default class TestImageViewer extends React.Component<Props> {
+export default class TestImageViewer extends React.Component<Props, State> {
   state = {
     visible: false
   };
