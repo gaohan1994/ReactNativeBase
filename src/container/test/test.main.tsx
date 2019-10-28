@@ -37,6 +37,13 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="webview"
             onPress={() => this.props.navigation.navigate({routeName: 'TestWeb'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestDatePicker" 
+            detailSubTitle="时间选择器"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestDatePicker'})} 
+          />
+          
         </ScrollView>
       </View>
     );

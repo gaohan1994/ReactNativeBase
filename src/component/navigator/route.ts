@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-28 17:49:14
+ * @Last Modified time: 2019-10-28 18:53:32
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -10,6 +10,7 @@ import CentermSdk from '../../container/test/test.centerm.sdk';
 import TestDeviceInfo from '../../container/test/test.device.info';
 import Web from '../../container/web/web';
 import TestWeb from '../../container/test/test.web';
+import TestDatePicker from '../../container/test/test.date.picker';
 
 export const StackRouteKeyMap = {
   test: {
@@ -41,6 +42,10 @@ export const routeMap = {
   TestWeb: {
     screen: TestWeb,
     path: "TestWeb"
+  },
+  TestDatePicker: {
+    screen: TestDatePicker,
+    path: "TestDatePicker"
   },
   /**
    * @param {Home} 主页

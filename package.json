@@ -20,6 +20,7 @@
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "rmc-date-picker": "^6.0.10",
     "teaset": "^0.7.0"
   },
   "devDependencies": {
