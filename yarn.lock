@@ -945,6 +945,13 @@
   resolved "https://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha1-KrDV2i5YFflLC51LldHl8kOrLKc=
 
+"@types/react-native-linear-gradient@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/@types/react-native-linear-gradient/-/react-native-linear-gradient-2.4.0.tgz#9c223f8aef2b17f18902518dabf1faeccfe4f7d4"
+  integrity sha512-4fLf0oo4zEbfGPo7rprezBdyy490eyTpl4cogWR8i9CDJzlsAEpmfkjVx8BpgOOF/RNfpa1XgFiSABDqtIi5/Q==
+  dependencies:
+    react-native-linear-gradient "*"
+
 "@types/react-native@*", "@types/react-native@^0.60.21":
   version "0.60.21"
   resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.60.21.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-native%2Fdownload%2F%40types%2Freact-native-0.60.21.tgz#81a41cae7b232f52ab3983d854f4a0b0df79531e"
@@ -5141,6 +5148,11 @@ react-native-gesture-handler@^1.4.1:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.4"
     prop-types "^15.7.2"
+
+react-native-linear-gradient@*, react-native-linear-gradient@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
+  integrity sha512-HDwEaXcQIuXXCV70O+bK1rizFong3wj+5Q/jSyifKFLg0VWF95xh8XQgfzXwtq0NggL9vNjPKXa016KuFu+VFg==
 
 react-native-safe-area-view@^0.14.1:
   version "0.14.8"

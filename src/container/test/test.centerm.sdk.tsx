@@ -1,8 +1,18 @@
 import * as React from 'react';
 import { View, ScrollView } from 'react-native';
 import { ListItem, ListItemSwipeButton, Button } from 'react-native-centerm-sdk';
+import LinearGradient from 'react-native-linear-gradient';
 
-export default class CentermSdk extends React.Component {
+type Props = { };
+
+type State = {
+  loading: boolean;
+};
+export default class CentermSdk extends React.Component<Props, State> {
+
+  state = {
+    loading: false
+  };
 
   static navigationOptions = () => {
     return {
@@ -10,10 +20,27 @@ export default class CentermSdk extends React.Component {
     };
   }
 
+  public onLoadingButtonPress = () => {
+    this.setState({loading: true}, () => {
+      setTimeout(() => {
+        this.setState({ loading: false });
+      }, 3000);
+    });
+  }
+
   public render() {
     const commonListItemProps: any = {
       bottomBorder: true,
       icon: {uri: 'http://net.huanmusic.com/react.png'}
+    };
+    const buttonLinearProps = {
+      title: "hello world",
+      ViewComponent: LinearGradient,
+      linearGradientProps: {
+        colors: ['#F05065', '#FDA75C'],
+        start: {x: 0, y: 0},
+        end: {x: 1, y: 0}
+      }
     };
     return (
       <View style={{flex: 1}}>
@@ -21,6 +48,11 @@ export default class CentermSdk extends React.Component {
           <View style={{alignItems: 'center', justifyContent: 'center'}}>
             <Button title="hello world" />
             <Button title="hello world" type="ghost" />
+            <Button 
+              {...buttonLinearProps}
+              loading={this.state.loading}
+              onPress={this.onLoadingButtonPress}
+            />
           </View>
 
           <ListItem
