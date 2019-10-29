@@ -848,6 +848,11 @@
   resolved "https://registry.npmjs.org/@react-native-community/slider/-/slider-1.1.4.tgz#ff7438afbc194d61f397e9258d78941c014ac110"
   integrity sha512-ecs5g1MSonDQdbPMghYkBLvJkXTOPziqVUwDUl9GDjoND+cDZDnOr+0z1IX+SZs2AdUOa8r+r8a7UyNt8MDNrw==
 
+"@react-native-community/viewpager@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@react-native-community/viewpager/-/viewpager-2.0.1.tgz#892e2148c8bca4ff157280e4be81d88be3264efc"
+  integrity sha512-fTTpO6xdVrTAAWbC1B2TQbxOkzDtvE9YfovDPYpi+S9oWmT06Eh8pv1Umd/7R/ewuLy9i2fzBnAu5WY+Di8OwA==
+
 "@react-navigation/core@~3.5.1":
   version "3.5.1"
   resolved "https://registry.npm.taobao.org/@react-navigation/core/download/@react-navigation/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
@@ -956,6 +961,14 @@
   integrity sha512-4fLf0oo4zEbfGPo7rprezBdyy490eyTpl4cogWR8i9CDJzlsAEpmfkjVx8BpgOOF/RNfpa1XgFiSABDqtIi5/Q==
   dependencies:
     react-native-linear-gradient "*"
+
+"@types/react-native-scrollable-tab-view@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.npmjs.org/@types/react-native-scrollable-tab-view/-/react-native-scrollable-tab-view-0.10.1.tgz#086c7021c24337ca60b4ce659486611c1669963d"
+  integrity sha512-33bFHxlZ3iGCfphkW8fauZeeDMniH2hfOxDxPyvq154OAt7FNAVTmPReTfwUhTKEn7aeM4XetHWpL42JMHl8HA==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
 
 "@types/react-native@*", "@types/react-native@^0.60.21":
   version "0.60.21"
@@ -1907,7 +1920,7 @@ create-react-class@15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
-create-react-class@^15.6.0, create-react-class@^15.6.3:
+create-react-class@^15.6.0, create-react-class@^15.6.2, create-react-class@^15.6.3:
   version "15.6.3"
   resolved "https://registry.npm.taobao.org/create-react-class/download/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha1-LXMjf7P5cK5uvgEanmb0bbyoADY=
@@ -5338,6 +5351,16 @@ react-native-safe-area-view@^0.14.1:
   dependencies:
     debounce "^1.2.0"
 
+react-native-scrollable-tab-view@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-native-scrollable-tab-view/-/react-native-scrollable-tab-view-1.0.0.tgz#87319896067f7bb643ecd7fba2cba4d6d8f9e18b"
+  integrity sha512-lpZ9xz+PBdgSzpk93VjCIfxV0zvJDX9iEUP8ImDg3p1QJGHOWbWyfDx+lcx5VCDVrrdZdtuVAAdc0tkYXZyQDw==
+  dependencies:
+    "@react-native-community/viewpager" "^2.0.1"
+    create-react-class "^15.6.2"
+    prop-types "^15.6.0"
+    react-timer-mixin "^0.13.3"
+
 react-native-swiper@^1.5.14:
   version "1.5.14"
   resolved "https://registry.npmjs.org/react-native-swiper/-/react-native-swiper-1.5.14.tgz#1c6f949ca377186300f972bb0f30d24062c899aa"
@@ -5498,7 +5521,7 @@ react-test-renderer@16.8.3:
     react-is "^16.8.3"
     scheduler "^0.13.3"
 
-react-timer-mixin@^0.13.2:
+react-timer-mixin@^0.13.2, react-timer-mixin@^0.13.3:
   version "0.13.4"
   resolved "https://registry.npm.taobao.org/react-timer-mixin/download/react-timer-mixin-0.13.4.tgz#75a00c3c94c13abe29b43d63b4c65a88fc8264d3"
   integrity sha1-daAMPJTBOr4ptD1jtMZaiPyCZNM=

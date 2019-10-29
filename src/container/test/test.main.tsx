@@ -18,7 +18,10 @@ export default class TestMain extends React.Component<Props> {
     };
     return (
       <View style={{flex: 1}}>
-        <ScrollView style={{flex: 1}}>
+        <ScrollView 
+          style={{flex: 1}}
+          contentContainerStyle={{paddingBottom: 20}}
+        >
           <ListItem
             {...commonListItemProps}
             title="CentermSdk" 
@@ -90,6 +93,12 @@ export default class TestMain extends React.Component<Props> {
             title="TestToast" 
             detailSubTitle="Toast"
             onPress={() => this.props.navigation.navigate({routeName: 'TestToast'})} 
+          />
+          <ListItem
+            {...commonListItemProps}
+            title="TestTabs" 
+            detailSubTitle="Tabs组件"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestTabs'})} 
           />
           
         </ScrollView>
