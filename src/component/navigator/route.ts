@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-29 11:53:59
+ * @Last Modified time: 2019-10-29 12:31:32
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -21,6 +21,7 @@ import TestSlider from '../../container/test/test.slider';
 import TestToast from '../../container/test/test.toast';
 import TestTabs from '../../container/test/test.tabs';
 import TestStepper from '../../container/test/test.stepper';
+import TestPullPikcer from '../../container/test/test.pull.picker';
 
 export const StackRouteKeyMap = {
   test: {
@@ -96,6 +97,10 @@ export const routeMap = {
   TestStepper: {
     screen: TestStepper,
     path: "TestStepper"
+  },
+  TestPullPikcer: {
+    screen: TestPullPikcer,
+    path: "TestPullPikcer"
   },
   /**
    * @param {Home} 主页

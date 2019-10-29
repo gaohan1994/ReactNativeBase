@@ -199,6 +199,14 @@ export interface StepperProps extends ViewProps {
 
 export class Stepper extends React.Component<StepperProps> { }
 
+export interface PullPickerProps {
+  
+}
+
+export class PullPicker extends React.Component<PullPickerProps> { 
+  static show: (params1: any, params2: any, params3: any, params4: any, params5?: any) => any;
+}
+
 export { 
   Button,
   Overlay,
