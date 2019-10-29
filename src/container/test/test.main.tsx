@@ -79,6 +79,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="阴影组件"
             onPress={() => this.props.navigation.navigate({routeName: 'TestShadowCard'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestSlider" 
+            detailSubTitle="可拖动的进度条"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestSlider'})} 
+          />
           
         </ScrollView>
       </View>
