@@ -118,6 +118,24 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="Wheel滚轮组件"
             onPress={() => this.props.navigation.navigate({routeName: 'TestWheel'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestDp" 
+            detailSubTitle="屏幕像素比"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestDp'})} 
+          />
+          <ListItem
+            {...commonListItemProps}
+            title="TestBadge" 
+            detailSubTitle="小角标"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestBadge'})} 
+          />
+          <ListItem
+            {...commonListItemProps}
+            title="TestActionPopover" 
+            detailSubTitle="ActionPopover组件"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestActionPopover'})} 
+          />
           
         </ScrollView>
       </View>

@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-29 12:43:18
+ * @Last Modified time: 2019-10-29 13:52:21
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -23,6 +23,9 @@ import TestTabs from '../../container/test/test.tabs';
 import TestStepper from '../../container/test/test.stepper';
 import TestPullPikcer from '../../container/test/test.pull.picker';
 import TestWheel from '../../container/test/test.wheel';
+import TestDp from '../../container/test/test.dp';
+import TestBadge from '../../container/test/test.badge';
+import TestActionPopover from '../../container/test/test.action.popover';
 
 export const StackRouteKeyMap = {
   test: {
@@ -106,6 +109,18 @@ export const routeMap = {
   TestWheel: {
     screen: TestWheel,
     path: "TestWheel"
+  },
+  TestDp: {
+    screen: TestDp,
+    path: "TestDp"
+  },
+  TestBadge: {
+    screen: TestBadge,
+    path: "TestBadge"
+  },
+  TestActionPopover: {
+    screen: TestActionPopover,
+    path: "TestActionPopover"
   },
   /**
    * @param {Home} 主页

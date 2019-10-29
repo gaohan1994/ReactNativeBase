@@ -221,6 +221,13 @@ interface WheelProps extends ViewProps {
 
 export class Wheel extends React.Component <WheelProps> {}
 
+export interface ActionPopoverProps {
+
+}
+export class ActionPopover extends React.Component<ActionPopoverProps> {
+  static show: (params1: any, params2: any, params3?: any) => any;
+}
+
 export { 
   Button,
   Overlay,
