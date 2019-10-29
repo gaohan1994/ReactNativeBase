@@ -16,6 +16,7 @@
     "react-native-image-crop-picker": "0.24.1",
     "react-native-image-zoom-viewer": "^2.2.26",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-pdf": "^5.1.7",
     "react-native-qrcode": "^0.2.7",
     "react-native-webview": "5.12.1",
     "react-navigation": "^3.11.0",
@@ -24,6 +25,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "rmc-date-picker": "^6.0.10",
+    "rn-fetch-blob": "0.10.13",
     "teaset": "^0.7.0"
   },
   "devDependencies": {

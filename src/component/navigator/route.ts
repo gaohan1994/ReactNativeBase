@@ -14,6 +14,7 @@ import TestDatePicker from '../../container/test/test.date.picker';
 import TestImageViewer from '../../container/test/test.image.viewer';
 import TestImagePicker from '../../container/test/test.image.picker';
 import TestQRCode from '../../container/test/test.qrcode';
+import TestPDF from '../../container/test/test.pdf.view';
 
 export const StackRouteKeyMap = {
   test: {
@@ -61,6 +62,10 @@ export const routeMap = {
   TestQRCode: {
     screen: TestQRCode,
     path: "TestQRCode"
+  },
+  TestPDF: {
+    screen: TestPDF,
+    path: "TestPDF"
   },
   /**
    * @param {Home} 主页
