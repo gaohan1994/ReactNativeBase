@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-28 19:46:59
+ * @Last Modified time: 2019-10-29 10:39:56
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -16,6 +16,7 @@ import TestImagePicker from '../../container/test/test.image.picker';
 import TestQRCode from '../../container/test/test.qrcode';
 import TestPDF from '../../container/test/test.pdf.view';
 import TestSwiper from '../../container/test/test.swiper';
+import TestShadowCard from '../../container/test/test.shadow.card';
 
 export const StackRouteKeyMap = {
   test: {
@@ -71,6 +72,10 @@ export const routeMap = {
   TestSwiper: {
     screen: TestSwiper,
     path: "TestSwiper"
+  },
+  TestShadowCard: {
+    screen: TestShadowCard,
+    path: "TestShadowCard"
   },
   /**
    * @param {Home} 主页

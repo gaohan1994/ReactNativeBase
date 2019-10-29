@@ -73,6 +73,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="滑动swiper"
             onPress={() => this.props.navigation.navigate({routeName: 'TestSwiper'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestShadowCard" 
+            detailSubTitle="阴影组件"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestShadowCard'})} 
+          />
           
         </ScrollView>
       </View>
