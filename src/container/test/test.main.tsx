@@ -67,6 +67,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="查看PDF组件"
             onPress={() => this.props.navigation.navigate({routeName: 'TestPDF'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestSwiper" 
+            detailSubTitle="滑动swiper"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestSwiper'})} 
+          />
           
         </ScrollView>
       </View>

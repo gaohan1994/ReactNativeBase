@@ -15,6 +15,7 @@ import TestImageViewer from '../../container/test/test.image.viewer';
 import TestImagePicker from '../../container/test/test.image.picker';
 import TestQRCode from '../../container/test/test.qrcode';
 import TestPDF from '../../container/test/test.pdf.view';
+import TestSwiper from '../../container/test/test.swiper';
 
 export const StackRouteKeyMap = {
   test: {
@@ -66,6 +67,10 @@ export const routeMap = {
   TestPDF: {
     screen: TestPDF,
     path: "TestPDF"
+  },
+  TestSwiper: {
+    screen: TestSwiper,
+    path: "TestSwiper"
   },
   /**
    * @param {Home} 主页
