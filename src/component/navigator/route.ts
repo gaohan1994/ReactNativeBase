@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-29 11:09:21
+ * @Last Modified time: 2019-10-29 11:35:36
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -18,6 +18,7 @@ import TestPDF from '../../container/test/test.pdf.view';
 import TestSwiper from '../../container/test/test.swiper';
 import TestShadowCard from '../../container/test/test.shadow.card';
 import TestSlider from '../../container/test/test.slider';
+import TestToast from '../../container/test/test.toast';
 
 export const StackRouteKeyMap = {
   test: {
@@ -81,6 +82,10 @@ export const routeMap = {
   TestSlider: {
     screen: TestSlider,
     path: "TestSlider"
+  },
+  TestToast: {
+    screen: TestToast,
+    path: "TestToast"
   },
   /**
    * @param {Home} 主页

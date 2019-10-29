@@ -85,6 +85,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="可拖动的进度条"
             onPress={() => this.props.navigation.navigate({routeName: 'TestSlider'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestToast" 
+            detailSubTitle="Toast"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestToast'})} 
+          />
           
         </ScrollView>
       </View>
