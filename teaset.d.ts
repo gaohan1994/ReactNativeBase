@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { TouchableOpacityProps, View, ViewProperties, TextStyle, ViewProps } from 'react-native';
+import { TouchableOpacityProps, View, ViewProperties, TextStyle, ViewProps, ViewStyle } from 'react-native';
+import { any } from 'prop-types';
 
 declare namespace Theme {
   function set (param: any): void;
@@ -206,6 +207,19 @@ export interface PullPickerProps {
 export class PullPicker extends React.Component<PullPickerProps> { 
   static show: (params1: any, params2: any, params3: any, params4: any, params5?: any) => any;
 }
+
+interface WheelProps extends ViewProps {
+  items: any[];
+  itemStyle?: TextStyle;
+  holeStyle?: ViewStyle;
+  maskStyle?: ViewStyle;
+  holeLine?: any;
+  index?: number;
+  defaultIndex?: number;
+  onChange?: (params?: any) => void;
+}
+
+export class Wheel extends React.Component <WheelProps> {}
 
 export { 
   Button,
