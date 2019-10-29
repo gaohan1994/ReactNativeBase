@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TouchableOpacityProps, View, ViewProperties, TextStyle } from 'react-native';
+import { TouchableOpacityProps, View, ViewProperties, TextStyle, ViewProps } from 'react-native';
 
 declare namespace Theme {
   function set (param: any): void;
@@ -181,6 +181,23 @@ export type CheckboxProps = {
 export class Checkbox extends React.Component<CheckboxProps, any> {
 
 }
+
+export interface StepperProps extends ViewProps {
+  defaultValue?: number;
+  value?: number;
+  step?: number;
+  max?: number;
+  min?: number;
+  valueStyle?:	TextStyle;
+  valueFormat?: (params: any) => any;
+  subButton?: any;
+  addButton?: any;
+  showSeparator?: boolean;
+  disabled?:	boolean;
+  editable?: boolean;
+}
+
+export class Stepper extends React.Component<StepperProps> { }
 
 export { 
   Button,

@@ -100,6 +100,12 @@ export default class TestMain extends React.Component<Props> {
             detailSubTitle="Tabs组件"
             onPress={() => this.props.navigation.navigate({routeName: 'TestTabs'})} 
           />
+          <ListItem
+            {...commonListItemProps}
+            title="TestStepper" 
+            detailSubTitle="Stepper组件"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestStepper'})} 
+          />
           
         </ScrollView>
       </View>
