@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
+import count, { CountReducer } from './demo/count.reducer';
 
-const test = () => {
-  return { };
-};
-
+export declare namespace AppReducer {
+  interface AppState {
+    count: CountReducer.State;
+  }
+}
 /**
  * @todo [所有reducer]
  */
 export default combineReducers({
-  test
+  count
 });
