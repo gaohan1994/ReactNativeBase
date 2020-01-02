@@ -2,7 +2,7 @@
  * @Author: Ghan 
  * @Date: 2019-10-28 16:19:29 
  * @Last Modified by: Ghan
- * @Last Modified time: 2019-10-29 13:52:21
+ * @Last Modified time: 2019-12-30 09:48:26
  */
 import TestMain from '../../container/test/test.main';
 import HomeMain from '../../container/home/home.main';
@@ -26,6 +26,7 @@ import TestWheel from '../../container/test/test.wheel';
 import TestDp from '../../container/test/test.dp';
 import TestBadge from '../../container/test/test.badge';
 import TestActionPopover from '../../container/test/test.action.popover';
+import TestInternation from '../../container/test/test.internation';
 
 export const StackRouteKeyMap = {
   test: {
@@ -121,6 +122,10 @@ export const routeMap = {
   TestActionPopover: {
     screen: TestActionPopover,
     path: "TestActionPopover"
+  },
+  TestInternation: {
+    screen: TestInternation,
+    path: "TestInternation"
   },
   /**
    * @param {Home} 主页

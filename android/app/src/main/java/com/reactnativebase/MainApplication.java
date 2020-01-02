@@ -3,6 +3,7 @@ package com.reactnativebase;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.reactnativecommunity.slider.ReactSliderPackage;
 import com.kishanjvaghela.cardview.RNCardViewPackage;
 import org.wonday.pdf.RCTPdfView;
@@ -32,6 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNI18nPackage(),
             new ReactSliderPackage(),
             new RNCardViewPackage(),
             new RCTPdfView(),

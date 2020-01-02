@@ -24,6 +24,12 @@ export default class TestMain extends React.Component<Props> {
         >
           <ListItem
             {...commonListItemProps}
+            title="TestInternation" 
+            detailSubTitle="多语言"
+            onPress={() => this.props.navigation.navigate({routeName: 'TestInternation'})} 
+          />
+          <ListItem
+            {...commonListItemProps}
             title="CentermSdk" 
             detailSubTitle="Design by Ghan Centerm Componens"
             onPress={() => this.props.navigation.navigate({routeName: 'CentermSdk'})} 
